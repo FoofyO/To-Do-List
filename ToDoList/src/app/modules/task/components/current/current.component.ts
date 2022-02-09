@@ -24,11 +24,17 @@ export class CurrentComponent implements OnInit {
     priority : Priority.low
   };
 
-  constructor(private taskService : TaskApiService, private routeService: ActivatedRoute, private router : Router) { }
+  constructor(private taskService : TaskApiService, private routeService: ActivatedRoute, private router : Router) { 
+  }
 
   async ngOnInit() {
     this.taskId = this.routeService.snapshot.paramMap.get('id') as string;
-    this.task = await this.taskService.getById(this.taskId) as Task;
+    try {
+      this.task = await this.taskService.getById(this.taskId) as Task;
+    }  
+    catch {
+      this.router.navigate(["/error"]);
+    }
   }
 
   async Sleep(time : number) {

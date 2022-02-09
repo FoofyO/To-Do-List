@@ -1,0 +1,18 @@
+div {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: 'Regular';
+
+    h1 {
+        color: red;
+        font-size: 8vh;
+    }
+
+    p {
+        font-size: 5vh;
+    }
+}
