@@ -1,0 +1,42 @@
+.sort-by {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: 'Regular';
+}
+
+.sort-by label {
+  margin-right: 0.5vw;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.sort-by select {
+  font-size: 3vh;
+  font-family: 'Regular';
+  border-radius: 7px;
+}
+
+.sort-by select option {
+  font-size: 2.7vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: 'Regular';
+}
+/*# sourceMappingURL=sortby.component.css.map */

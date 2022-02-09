@@ -1,0 +1,39 @@
+.new-task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding-right: 2vh;
+  border-radius: 10px;
+  background-color: green;
+}
+
+.new-task p {
+  color: white;
+  font-family: 'Medium';
+}
+
+.new-task:hover {
+  opacity: 0.8;
+}
+
+.new-task:active {
+  opacity: 0.6;
+}
+/*# sourceMappingURL=task-creation.component.css.map */

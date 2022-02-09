@@ -1,0 +1,27 @@
+.new-task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: 0.5s;
+    user-select: none;
+
+    padding-right: 2vh;
+    border-radius: 10px;
+    background-color: green;
+
+    p {
+        color: white;
+        font-family: 'Medium';
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+}

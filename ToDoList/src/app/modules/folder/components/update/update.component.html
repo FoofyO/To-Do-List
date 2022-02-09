@@ -1,0 +1,26 @@
+<div class="modal-div">
+    <div class="modal-background"></div>
+    <div id="myModal" class="modal">
+        <div class="modal-header">
+            <h2>Update&ensp;folder</h2>
+        </div>
+        <form class="modal-body" [formGroup]="updateForm" (submit)="OnSubmit()">
+            <input formControlName="title"
+            placeholder="Folder name"
+            type="text"
+            id="title"
+            name="title"
+            maxlength="30">
+            <div class="modal-buttons">
+                <button type="reset" class="gray" (click)="OnClick()">Cancel</button>
+                <button type="submit" class="purple" [disabled]="!updateForm.valid">Update</button>
+            </div>
+            <div class="errors">
+                <ng-container *ngIf="title?.touched">
+                    <span *ngIf="title?.errors?.['required']">* Folder name is required</span>
+                    <span *ngIf="title?.errors?.['pattern']">* Folder name is not valid</span>
+                </ng-container>
+            </div>
+        </form>
+    </div>
+</div>

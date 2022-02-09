@@ -1,0 +1,12 @@
+<div class="modal-div">
+    <div (click)="OnClick()" class="modal-background"></div>
+    <div id="myModal" class="modal">
+        <div class="modal-header">
+            <h2>Error</h2>
+            <span (click)="OnClick()" class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p>{{errorDescription}}</p>
+        </div>
+    </div>
+</div>

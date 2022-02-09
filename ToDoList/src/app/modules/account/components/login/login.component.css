@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'Light';
+  src: url(/assets/fonts/TTNormsPro-Light/TTNormsPro-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Regular';
+  src: url(/assets/fonts/TTNormsPro-Regular/TTNormsPro-Regular.ttf) format("truetype");
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vh;
+  padding: 3vw;
+  margin-top: 2vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.login .head {
+  margin-bottom: 5vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login .head span {
+  font-size: 5vh;
+  font-family: 'Light';
+  font-weight: bold;
+}
+
+.login .body {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login .body .bodyItem {
+  margin-bottom: 3vh;
+}
+
+.login .body .bodyItem input[type=email] {
+  width: 22vw;
+  height: 4.5vh;
+  font-size: 3vh;
+  font-family: 'Regular';
+  border-radius: 5px;
+  border: 1px black solid;
+}
+
+.login .body .bodyPasswordItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3vh;
+  white-space: pre-wrap;
+}
+
+.login .body .bodyPasswordItem input[type=password] {
+  width: 22vw;
+  height: 4.5vh;
+  font-size: 3vh;
+  font-family: 'Regular';
+  border-radius: 5px;
+  border: 1px black solid;
+}
+
+.login .body .bodyPasswordItem:hover::after {
+  position: absolute;
+  content: attr(data-title);
+  right: +18%;
+  bottom: +24%;
+  font-size: 2.6vh;
+  font-family: 'Regular';
+  padding: 2vh;
+  border-radius: 10px;
+  background: white;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.login .body .buttonItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.login .body .buttonItem button {
+  height: 7vh;
+  width: 13vw;
+  color: white;
+  cursor: pointer;
+  background-color: limegreen;
+  font-size: 3vh;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.login .body .buttonItem button:hover {
+  opacity: 0.8;
+}
+
+.login .body .buttonItem button:active {
+  opacity: 0.7;
+}
+
+.login .body .buttonItem button:disabled {
+  cursor: no-drop;
+  opacity: 0.5;
+}
+
+.login a {
+  color: #1877f2;
+  font-size: 3vh;
+  font-family: 'Regular';
+  text-decoration: none;
+  margin-bottom: 2vh;
+}
+
+.login .errors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: red;
+  font-family: 'Regular';
+}
+/*# sourceMappingURL=login.component.css.map */

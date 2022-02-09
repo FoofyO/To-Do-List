@@ -1,0 +1,41 @@
+.tool-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2vh;
+  margin-top: 3vh;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+}
+
+.tool-bar button {
+  margin-left: 0.5vw;
+  border: transparent;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.tool-bar button svg {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  fill: darkblue;
+}
+
+.tool-bar button svg:hover {
+  opacity: 0.6;
+}
+
+.tool-bar button svg:active {
+  opacity: 0.4;
+}
+/*# sourceMappingURL=current.component.css.map */

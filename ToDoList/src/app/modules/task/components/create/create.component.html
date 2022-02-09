@@ -1,0 +1,57 @@
+<div class="modal-div">
+    <div class="modal-background"></div>
+    <div id="myModal" class="modal">
+        <div class="modal-header">
+            <h2>New&ensp;task</h2>
+        </div>
+        <form class="modal-body" [formGroup]="createForm" (submit)="OnSubmit()">
+            <input formControlName="title"
+            placeholder="Task name"
+            type="text"
+            id="title"
+            name="title"
+            maxlength="30">
+            
+            <textarea formControlName="description"
+            id="description"
+            name="description"
+            maxlength="500"></textarea>
+            
+            <div class="row">
+                <div class="column">
+                    <label>Lead time:</label>
+                    <input type="date" 
+                    id="realization"
+                    name="realization"
+                    formControlName="realization">
+                </div>
+                <div class="column">
+                    <label>Priority:</label>
+                    <select formControlName="priority" id="priority" name="priority" [value]="0">
+                        <option value="0">Low</option>
+                        <option value="1">Medium</option>
+                        <option value="2">High</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="modal-buttons">
+                <button type="reset" class="gray" (click)="OnClick()">Cancel</button>
+                <button type="submit" class="green" [disabled]="!createForm.valid">Create</button>
+            </div>
+            
+            <div class="errors">
+                <ng-container *ngIf="title?.touched">
+                    <span *ngIf="title?.errors?.['required']">* Task name is required</span>
+                    <span *ngIf="title?.errors?.['pattern']">* Task name is not valid</span>
+                </ng-container>
+                <ng-container *ngIf="description?.touched">
+                    <span *ngIf="description?.errors?.['required']">* Description is required</span>
+                </ng-container>
+                <ng-container *ngIf="realization?.touched">
+                    <span *ngIf="realization?.errors?.['required']">* Lead time is required</span>
+                </ng-container>
+            </div>
+        </form>
+    </div>
+</div>

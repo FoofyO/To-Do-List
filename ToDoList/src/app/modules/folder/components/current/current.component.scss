@@ -1,0 +1,57 @@
+.tool-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 2vh;
+    margin-top: 3vh;
+    
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+
+    button {
+        margin-left: 0.5vw;
+        border: transparent;
+        cursor: pointer;
+        background-color: transparent;
+        
+        svg {
+            transition: 0.4s;
+            fill: darkblue;
+
+            &:hover {
+                opacity: 0.6;
+            }
+
+            &:active {
+                opacity: 0.4;
+            }
+        }
+    }
+}
+
+.task-grid {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    grid-row-gap: 3vh;
+    grid-template-columns: 6fr 6fr 6fr 6fr;
+
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+.task-list {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+
+    grid-row-gap: 3vh;
+    grid-template-columns: 6fr 6fr 6fr 6fr;
+
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}

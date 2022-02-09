@@ -1,0 +1,51 @@
+<div class="register">
+    <div class="head">
+        <span>Create account</span>
+    </div>
+    <form class="body" [formGroup]="registerForm" (submit)="onSubmit()">
+        <div class="bodyItem">
+            <input formControlName="email"
+                placeholder="Email"
+                type="email"
+                id="email"
+                name="email">
+        </div>
+        <div class="bodyUserNameItem" data-title="Minimum 5 characters&#10;May contain a number&#10;May contain an upper case&#10;May contain a lower dash">
+            <input formControlName="userName"
+                placeholder="Login"
+                type="text"
+                id="userName"
+                minlength="7"
+                maxlength="20"
+                name="userName">
+        </div>
+        <div class="bodyPasswordItem" data-title="Minimum 8 characters&#10;Should have at least one number&#10;Should have at least one upper case&#10;Should have at least one lower case&#10;Should have at least one special character :&#10;?=.*[#$^+=!*()@%&-_]">
+            <input formControlName="password"
+                placeholder="New password"
+                type="password"
+                id="password"
+                minlength="8"
+                maxlength="36"
+                name="password">
+        </div>
+        <div class="buttonItem">
+            <button [disabled]="!registerForm.valid" type="submit">Sign up</button>
+        </div>
+    </form>
+    <a href="/account/login">Log in</a>
+    <div class="errors">
+        <ng-container *ngIf="email?.touched">
+            <span *ngIf="email?.errors?.['required']">* Email is required</span>
+            <span *ngIf="email?.errors?.['email']">* Email is not valid</span>
+        </ng-container>
+        <ng-container *ngIf="userName?.touched">
+            <span *ngIf="userName?.errors?.['required']">* User name is required</span>
+            <span *ngIf="userName?.errors?.['pattern']">* User name is not valid</span>
+        </ng-container>
+        <ng-container *ngIf="password?.touched">
+            <span *ngIf="password?.errors?.['required']">* Password is required</span>
+            <span *ngIf="password?.errors?.['pattern']">* Password is not valid</span>
+        </ng-container>
+    </div>
+</div>
+<app-account-modal-error *ngIf="isError" [errorDescription]="description" (closeModal)="isError = false;"></app-account-modal-error>

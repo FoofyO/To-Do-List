@@ -1,0 +1,26 @@
+.sort-by {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 3vh;
+    user-select: none;
+    font-family: 'Regular';
+
+    label {
+        margin-right: 0.5vw;
+        user-select: none;
+    }
+
+    select {
+        font-size: 3vh;
+        font-family: 'Regular';
+        border-radius: 7px;
+
+        option {
+            font-size: 2.7vh;
+            user-select: none;
+            font-family: 'Regular';
+        }
+    }
+}

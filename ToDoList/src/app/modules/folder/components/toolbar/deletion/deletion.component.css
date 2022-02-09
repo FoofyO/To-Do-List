@@ -1,0 +1,44 @@
+.delete-folder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding-right: 2vh;
+  border-radius: 10px;
+  background-color: red;
+}
+
+.delete-folder p {
+  color: white;
+  font-family: 'Medium';
+}
+
+.delete-folder:hover {
+  opacity: 0.8;
+}
+
+.delete-folder:active {
+  opacity: 0.6;
+}
+
+.delete-folder svg {
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+/*# sourceMappingURL=deletion.component.css.map */

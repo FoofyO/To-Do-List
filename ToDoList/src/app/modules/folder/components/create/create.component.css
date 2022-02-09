@@ -1,0 +1,180 @@
+.modal-div .modal-background {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  background-color: black;
+}
+
+.modal-div .modal {
+  left: 30%;
+  top: 25%;
+  z-index: 1;
+  min-width: 45%;
+  min-height: 45%;
+  overflow: auto;
+  position: fixed;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: animateTop;
+          animation-name: animateTop;
+  opacity: 1;
+  border-radius: 10px;
+  border: 1px solid #888;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal-div .modal .modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-color: green;
+}
+
+.modal-div .modal .modal-header h2 {
+  font-size: 4vh;
+  font-family: 'Regular';
+}
+
+.modal-div .modal .modal-header .close {
+  margin-right: 1vw;
+  cursor: pointer;
+  color: white;
+  font-size: 4vh;
+  font-weight: bold;
+}
+
+.modal-div .modal .modal-header .close:hover, .modal-div .modal .modal-header .close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.modal-div .modal .modal-body {
+  padding: 1vw;
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.modal-div .modal .modal-body input[type=text] {
+  width: 22vw;
+  height: 4.5vh;
+  font-size: 3vh;
+  font-family: 'Regular';
+  border-radius: 5px;
+  border: 1px black solid;
+}
+
+.modal-div .modal .modal-body p {
+  font-family: 'Regular';
+}
+
+.modal-div .modal .modal-body .modal-buttons {
+  margin-top: 5vh;
+}
+
+.modal-div .modal .modal-body .modal-buttons button {
+  height: 4.5vh;
+  width: 7vw;
+  color: white;
+  cursor: pointer;
+  font-size: 2.5vh;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal-div .modal .modal-body .modal-buttons button:hover {
+  opacity: 0.8;
+}
+
+.modal-div .modal .modal-body .modal-buttons button:active {
+  opacity: 0.7;
+}
+
+.modal-div .modal .modal-body .modal-buttons button:disabled {
+  cursor: no-drop;
+  opacity: 0.5;
+}
+
+.modal-div .modal .modal-body .modal-buttons .green {
+  margin-left: 1vw;
+  background-color: limegreen;
+}
+
+.modal-div .modal .modal-body .modal-buttons .gray {
+  background-color: gray;
+}
+
+.modal-div .modal .modal-body .errors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: red;
+  margin-top: 5vh;
+  font-family: 'Regular';
+}
+
+@-webkit-keyframes animateTop {
+  from {
+    top: -25%;
+    opacity: 0;
+  }
+  to {
+    top: 25%;
+    opacity: 1;
+  }
+}
+
+@keyframes animateTop {
+  from {
+    top: -25%;
+    opacity: 0;
+  }
+  to {
+    top: 25%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animateClose {
+  from {
+    top: 25%;
+    opacity: 1;
+  }
+  to {
+    top: -25%;
+    opacity: 0;
+  }
+}
+
+@keyframes animateClose {
+  from {
+    top: 25%;
+    opacity: 1;
+  }
+  to {
+    top: -25%;
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=create.component.css.map */

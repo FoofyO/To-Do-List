@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Medium';
+  src: url(/assets/fonts/TTNormsPro-Medium/TTNormsPro-Medium.ttf) format("truetype");
+}
+
+.tool-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2vh;
+  margin-top: 3vh;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+}
+
+.folder-grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  grid-row-gap: 3vh;
+  -ms-grid-columns: 6fr 6fr 6fr 6fr;
+      grid-template-columns: 6fr 6fr 6fr 6fr;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+
+.folder-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-row-gap: 3vh;
+  -ms-grid-columns: 6fr 6fr 6fr 6fr;
+      grid-template-columns: 6fr 6fr 6fr 6fr;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+/*# sourceMappingURL=list.component.css.map */

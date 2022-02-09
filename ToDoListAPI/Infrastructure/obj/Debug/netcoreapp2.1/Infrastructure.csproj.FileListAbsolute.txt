@@ -1,0 +1,10 @@
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Infrastructure\bin\Debug\netcoreapp2.1\Infrastructure.deps.json
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Infrastructure\bin\Debug\netcoreapp2.1\Infrastructure.dll
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Infrastructure\bin\Debug\netcoreapp2.1\Infrastructure.pdb
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Infrastructure\obj\Debug\netcoreapp2.1\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Infrastructure\obj\Debug\netcoreapp2.1\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Infrastructure\obj\Debug\netcoreapp2.1\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Infrastructure\obj\Debug\netcoreapp2.1\Infrastructure.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Infrastructure\obj\Debug\netcoreapp2.1\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Infrastructure\obj\Debug\netcoreapp2.1\Infrastructure.dll
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Infrastructure\obj\Debug\netcoreapp2.1\Infrastructure.pdb

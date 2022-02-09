@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Regular';
+    src: url(/assets/fonts/TTNormsPro-Regular/TTNormsPro-Regular.ttf) format("truetype");
+}
+
+.folder-min {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 20vw;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    user-select: none;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+
+    svg {
+        fill: #ffe896;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    p {
+        color: darkslategray;
+        font-family: 'Regular';
+    }
+    
+    &:hover {
+        border: 1px solid gray;
+        background-color: whitesmoke;
+    }
+    
+    &:active {
+        border: 1px solid blue;
+    }
+}
+
+.folder-max {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 35vw;
+    font-size: 5vh;
+
+    cursor: pointer;
+    transition: 0.3s;
+    
+    user-select: none;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+
+    svg {
+        fill: #ffe896;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    p {
+        color: darkslategray;
+        font-family: 'Regular';
+    }
+    
+    &:hover {
+        border: 1px solid gray;
+        background-color: whitesmoke;
+    }
+    
+    &:active {
+        border: 1px solid blue;
+    }
+}

@@ -1,0 +1,9 @@
+<div class="tool-bar">
+    <app-folder-tool-creation (showCreate)="OnCreateClick()"></app-folder-tool-creation>
+    <app-folder-sortby (sortBy)="OnSortBy($event)"></app-folder-sortby>
+    <app-folder-tool-gridlist (changeView)="OnChangeView()"></app-folder-tool-gridlist>
+</div>
+<div class="{{(view == false) && 'folder-grid' || 'folder-list'}}">
+    <app-folder-item [viewBox]="view" *ngFor="let item of folders" [folder]="item"></app-folder-item>
+</div>
+<app-folder-create *ngIf="creation" (closeCreate)="OnCreation($event)"></app-folder-create>

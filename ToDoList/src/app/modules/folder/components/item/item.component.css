@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Regular';
+  src: url(/assets/fonts/TTNormsPro-Regular/TTNormsPro-Regular.ttf) format("truetype");
+}
+
+.folder-min {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20vw;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+.folder-min svg {
+  fill: #ffe896;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.folder-min p {
+  color: darkslategray;
+  font-family: 'Regular';
+}
+
+.folder-min:hover {
+  border: 1px solid gray;
+  background-color: whitesmoke;
+}
+
+.folder-min:active {
+  border: 1px solid blue;
+}
+
+.folder-max {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35vw;
+  font-size: 5vh;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+.folder-max svg {
+  fill: #ffe896;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.folder-max p {
+  color: darkslategray;
+  font-family: 'Regular';
+}
+
+.folder-max:hover {
+  border: 1px solid gray;
+  background-color: whitesmoke;
+}
+
+.folder-max:active {
+  border: 1px solid blue;
+}
+/*# sourceMappingURL=item.component.css.map */

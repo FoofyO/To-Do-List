@@ -1,0 +1,14 @@
+<div class="modal-div">
+    <div class="modal-background"></div>
+    <div id="myModal" class="modal">
+        <div class="modal-header">
+            <h2>Are you sure you want to delete this task?</h2>
+        </div>
+        <form class="modal-body" (submit)="OnSubmit()">
+            <div class="modal-buttons">
+                <button type="reset" class="gray" (click)="OnClick()">No</button>
+                <button type="submit" class="red">Yes</button>
+            </div>
+        </form>
+    </div>
+</div>

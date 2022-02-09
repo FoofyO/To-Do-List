@@ -1,0 +1,10 @@
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Core\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Core\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Core\obj\Debug\netcoreapp3.1\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Core\obj\Debug\netcoreapp3.1\Core.dll
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Core\obj\Debug\netcoreapp3.1\Core.pdb
+C:\Users\user\Documents\GitHub\To-Do-List\ToDoListAPI\Core\obj\Debug\netcoreapp3.1\Core.csproj.AssemblyReference.cache

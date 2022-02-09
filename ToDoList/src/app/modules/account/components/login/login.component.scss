@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Light';
+    src: url(/assets/fonts/TTNormsPro-Light/TTNormsPro-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url(/assets/fonts/TTNormsPro-Regular/TTNormsPro-Regular.ttf) format("truetype");
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 50vh;
+    padding: 3vw;
+    margin-top: 2vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+    .head {
+        margin-bottom: 5vh;
+        justify-content: center;
+
+        span {
+            font-size: 5vh;
+            font-family: 'Light';
+            font-weight: bold;
+        }
+    }
+
+    .body {
+        justify-content: center;
+
+        .bodyItem {
+            margin-bottom: 3vh;
+
+            input[type=email] {
+                width: 22vw;
+                height: 4.5vh;
+
+                font-size: 3vh;
+                font-family: 'Regular';
+                
+                border-radius: 5px;
+                border: 1px black solid;
+            }
+        }
+
+        .bodyPasswordItem {
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            margin-bottom: 3vh;
+            white-space: pre-wrap;
+
+            input[type=password] {
+                width: 22vw;
+                height: 4.5vh;
+
+                font-size: 3vh;
+                font-family: 'Regular';
+                
+                border-radius: 5px;
+                border: 1px black solid;
+            }
+
+            &:hover::after {
+                position: absolute;
+                content: attr(data-title);
+
+                right: +18%;
+                bottom: +24%;
+
+                font-size: 2.6vh;
+                font-family: 'Regular';
+
+                padding: 2vh;
+                border-radius: 10px;
+                background: white;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+        }
+
+        .buttonItem {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5vh;
+
+            button {
+                height: 7vh;
+                width: 13vw;
+
+                color: white;
+                cursor: pointer;
+                background-color: limegreen;
+                
+                font-size: 3vh;
+                border-radius: 10px;
+                border: 2px solid rgba(0,0,0,0.2);
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                &:active {
+                    opacity: 0.7;
+                }
+
+                &:disabled {
+                    cursor:no-drop;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    a {
+        color: #1877f2;
+        font-size: 3vh;
+        font-family: 'Regular';
+        text-decoration: none;
+
+        margin-bottom: 2vh;
+    }
+
+    .errors {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        color: red;
+        font-family: 'Regular';
+    }
+}

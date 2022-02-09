@@ -1,0 +1,66 @@
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-left: 30vw;
+  list-style-type: none;
+}
+
+ul li a {
+  color: white;
+  font-size: 3vh;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: 'Regular';
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: lightgrey;
+}
+
+ul li a:active {
+  opacity: 0.4;
+}
+
+ul li p {
+  color: white;
+  font-size: 3vh;
+  font-family: 'Regular';
+  padding: 1vh;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+ul button {
+  margin-left: 0.5vw;
+  border: transparent;
+  background-color: transparent;
+}
+
+ul button svg {
+  color: white;
+}
+
+ul button svg:hover {
+  opacity: 0.6;
+}
+
+ul button svg:active {
+  opacity: 0.4;
+}
+/*# sourceMappingURL=account-menu.component.css.map */

@@ -1,0 +1,140 @@
+.modal-div {
+    .modal-background {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        position: absolute;
+        background-color: black;
+    }
+    
+    .modal {
+        left: 30%;
+        top: 25%;
+        z-index: 1;
+        min-width: 45%;
+        min-height: 45%;
+        overflow: auto;
+        position: fixed;
+        
+        animation-duration: 0.5s;
+        animation-name: animateTop;
+        
+        opacity: 1;
+        border-radius: 10px;
+        border: 1px solid #888;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            color: white;
+            background-color: green;
+            
+            h2 {
+                font-size: 4vh;
+                font-family: 'Regular';
+            }
+            
+            .close {
+                margin-right: 1vw;
+                
+                cursor: pointer;
+                color: white;
+                
+                font-size: 4vh;
+                font-weight: bold;
+                
+                &:hover,
+                &:focus {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+        
+        .modal-body {
+            padding: 1vw;
+            margin-top: 5vh;
+            text-align: center;
+            
+            input[type=text] {
+                width: 22vw;
+                height: 4.5vh;
+
+                font-size: 3vh;
+                font-family: 'Regular';
+                
+                border-radius: 5px;
+                border: 1px black solid;
+            }
+
+            p { 
+                font-family: 'Regular';
+            }
+
+            .modal-buttons {
+                margin-top: 5vh;
+
+                button {
+                    height: 4.5vh;
+                    width: 7vw;
+                    
+                    color: white;
+                    cursor: pointer;
+                    
+                    font-size: 2.5vh;
+                    border-radius: 10px;
+                    border: 2px solid rgba(0,0,0,0.2);
+                    
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                    
+                    &:active {
+                        opacity: 0.7;
+                    }
+                    
+                    &:disabled {
+                        cursor:no-drop;
+                        opacity: 0.5;
+                    }
+                }
+
+                .green {
+                    margin-left: 1vw;
+                    background-color: limegreen;
+                }
+                
+                .gray {
+                    background-color: gray;
+                }
+            }
+
+            .errors {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+        
+                color: red;
+                margin-top: 5vh;
+                font-family: 'Regular';
+            }
+        }
+            
+        @keyframes animateTop {
+            from { top: -25%; opacity: 0 }
+            to { top: 25%; opacity: 1 }
+        }
+        
+        @keyframes animateClose {
+            from { top: 25%; opacity: 1; }
+            to { top: -25%; opacity: 0; }           
+        }
+    }
+}

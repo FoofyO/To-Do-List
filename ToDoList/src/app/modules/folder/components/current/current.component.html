@@ -1,0 +1,17 @@
+<div class="tool-bar">
+    <button (click)="OnBack()">
+        <svg width="30" height="30" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+        </svg>
+    </button>
+    <app-task-creation (showCreate)="OnCreateClick()"></app-task-creation>
+    <app-folder-deletion (showDelete)="OnDeleteClick()"></app-folder-deletion>
+    <app-folder-updation (showUpdate)="OnUpdateClick()"></app-folder-updation>
+    <app-folder-tool-gridlist (changeView)="OnChangeView()"></app-folder-tool-gridlist>
+</div>
+<div class="{{(view == false) && 'task-grid' || 'task-list'}}">
+    <app-task-item [viewBox]="view" *ngFor="let item of tasks" [task]="item"></app-task-item>
+</div>
+<app-task-create *ngIf="creation" [folderId]="folderId" (closeCreate)="OnCreation($event)"></app-task-create>
+<app-folder-update *ngIf="updation" [folder]="folder" (closeUpdate)="OnUpdation($event)"></app-folder-update>
+<app-folder-delete *ngIf="deletion" (closeDelete)="OnDeletion($event)"></app-folder-delete>

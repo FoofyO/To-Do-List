@@ -1,0 +1,17 @@
+<div class="item">
+    <div class="header">
+        <h1>{{task.title}}</h1>
+        <ul [ngSwitch]="task.priority">
+            <li class="green" *ngSwitchCase="'0'">Low</li>
+            <li class="yellow" *ngSwitchCase="'1'">Medium</li>
+            <li class="red" *ngSwitchCase="'2'">High</li>
+        </ul>
+    </div>
+    <div class="body">
+        <p>{{task.description}}</p>
+    </div>
+    <div class="footer">
+        <p>Lead time: to {{task.realization  | date}}</p>
+        <p>Created: {{task.creationDate | datetime}}</p>
+    </div>
+</div>

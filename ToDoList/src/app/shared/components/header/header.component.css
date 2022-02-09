@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Medium';
+  src: url(/assets/fonts/TTNormsPro-Medium/TTNormsPro-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Regular';
+  src: url(/assets/fonts/TTNormsPro-Regular/TTNormsPro-Regular.ttf) format("truetype");
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 15vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: darkblue;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 6vh;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: 'Medium';
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: lightgrey;
+}
+
+nav ul li a:active {
+  opacity: 0.4;
+}
+/*# sourceMappingURL=header.component.css.map */

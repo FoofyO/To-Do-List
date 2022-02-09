@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Medium';
+    src: url(/assets/fonts/TTNormsPro-Medium/TTNormsPro-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url(/assets/fonts/TTNormsPro-Regular/TTNormsPro-Regular.ttf) format("truetype");
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    height: 15vh;
+    user-select: none;
+    background-color: darkblue;
+    ul {
+        list-style-type: none;
+
+        li {
+            a {
+                color:white;
+                font-size: 6vh;
+                cursor: pointer;
+                transition: 0.5s;
+                font-family: 'Medium';
+                text-decoration: none;
+
+                &:hover { 
+                    color: lightgrey;
+                }
+
+                &:active { 
+                    opacity: 0.4;
+                }
+            }
+        }
+    }
+}

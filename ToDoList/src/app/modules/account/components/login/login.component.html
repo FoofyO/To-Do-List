@@ -1,0 +1,38 @@
+<div class="login">
+    <div class="head">
+        <span>Sign in</span>
+    </div>
+    <form class="body" [formGroup]="loginForm" (submit)="onSubmit()">
+        <div class="bodyItem">
+            <input formControlName="email"
+                placeholder="Email"
+                type="email"
+                id="email"
+                name="email">
+        </div>
+        <div class="bodyPasswordItem" data-title="Minimum 8 characters&#10;Should have at least one number&#10;Should have at least one upper case&#10;Should have at least one lower case&#10;Should have at least one special character">
+            <input formControlName="password"
+                placeholder="Password"
+                type="password"
+                id="password"
+                minlength="8"
+                maxlength="36"
+                name="password">
+        </div>
+        <div class="buttonItem">
+            <button [disabled]="!loginForm.valid" type="submit" class="">Sign in</button>
+        </div>
+    </form>
+    <a href="/account/register">Create new account</a>
+    <div class="errors">
+        <ng-container *ngIf="email?.touched">
+            <span *ngIf="email?.errors?.['required']">* Email is required</span>
+            <span *ngIf="email?.errors?.['email']">* Email is not valid</span>
+        </ng-container>
+        <ng-container *ngIf="password?.touched">
+            <span *ngIf="password?.errors?.['required']">* Password is required</span>
+            <span *ngIf="password?.errors?.['pattern']">* Password is not valid</span>
+        </ng-container>
+    </div>
+</div>
+<app-account-modal-error *ngIf="isError" [errorDescription]="description" (closeModal)="isError = false;"></app-account-modal-error>
